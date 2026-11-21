@@ -1,0 +1,8 @@
+# Player-vs-player combat tag duration in seconds.
+combat-tag-seconds: 15
+
+# Slowness I, Weakness I, and Mining Fatigue I duration after respawn.
+respawn-effects-seconds: 120
+
+# Potion amplifier: 0 = level I.
+respawn-effects-amplifier: 0

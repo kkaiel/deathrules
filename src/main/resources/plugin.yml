@@ -1,0 +1,6 @@
+name: DeathRules
+version: 1.0.0
+main: kr.nightbeam.deathrules.DeathRulesPlugin
+api-version: '26.3'
+author: Nightbeam Studio
+description: Custom death inventory retention and combat logout rules.
