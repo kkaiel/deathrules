@@ -59,6 +59,8 @@ public final class DeathRulesPlugin extends JavaPlugin implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDeath(PlayerDeathEvent event) {
         Player player = event.getEntity();
+        // Keep hotbar, armor, and offhand; the handler manually drops slots 9-35.
+        event.setKeepInventory(true);
         applyDeathInventoryRules(player, event.getDrops());
         pendingEffects.put(player.getUniqueId(), getConfig().getLong("respawn-effects-seconds", 120));
         savePendingEffects();
